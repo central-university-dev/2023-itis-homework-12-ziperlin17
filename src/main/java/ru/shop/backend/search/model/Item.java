@@ -2,16 +2,14 @@ package ru.shop.backend.search.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-@Getter
-@Setter
 @Entity
+@Getter
+@Table(name = "item")
 public class Item {
     @Column
     private Integer price;
